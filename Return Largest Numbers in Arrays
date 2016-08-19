@@ -10,7 +10,7 @@ function largestOfFour(arr) {
         largest = arr[k][i];
         
         newArr[k] = largest;
-        console.log(newArr);
+        console.log(newArr); //testing purpose
       }
     }
     
