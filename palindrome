@@ -1,0 +1,13 @@
+function palindrome(str) {
+  // Good luck!
+  str = str.toLowerCase().replace(/[^0-9a-zA-Z]/g, '');
+  var str2 = str.split('').reverse().join('');
+  if(str.localeCompare(str2)===0){
+     return true;
+     }
+  return false;
+}
+
+
+
+palindrome("eye");
