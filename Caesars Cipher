@@ -1,0 +1,26 @@
+function rot13(str) { // LBH QVQ VG!
+  
+  var newStr = "",
+      letter = "";
+  var num = 0;
+  
+  str.toLowerCase();
+  
+  for(k=0; k < str.length; k++){
+    if(str[k].match(/[a-z]/i)){
+      num = (str[k].charCodeAt())-13;
+      if(num < 65)
+        num = 91 - (65 - num) ;
+      
+      newStr += String.fromCharCode(num);
+      
+    } else
+      newStr += str[k];
+
+      
+  }
+  return newStr;
+}
+
+// Change the inputs below to test
+rot13("SERR YBIR?");
