@@ -1,0 +1,18 @@
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  arr.push(num);
+  arr.sort(function(a,b){
+    return a-b
+  });
+  
+  console.log(arr); //testing purpose
+  for(k=0;k < arr.length; k++){
+    if(num === arr[k])
+      return k;
+    
+  }
+  
+  return num;
+}
+//3 3 5 20
+getIndexToIns([3, 10, 5], 3);
